@@ -1,0 +1,18 @@
+Você está desenvolvendo um sistema para um e-commerce que precisa lidar com
+diferentes métodos de pagamento, como cartões de crédito, PayPal, boletos bancários,
+criptomoedas, etc. Cada método de pagamento tem sua própria lógica de validação
+ e processamento.
+ A manutenção desse código está se tornando complicada porque as regras de negócio
+ para cada método de pagamento estão todas misturadas em uma única classe
+ PaymentProcessor.
+
+Conforme novos métodos de pagamento são adicionados, o código da classe PaymentProcessor
+está ficando cada vez mais inchado e difícil de gerenciar.
+Além disso, qualquer alteração em um método de pagamento específico requer modificações
+nessa classe, aumentando o risco de introduzir bugs em outras partes do código.
+
+Requisitos:
+
+1 - Desacoplar a lógica de cada método de pagamento específico da classe principal PaymentProcessor.
+2 - Facilitar a adição de novos métodos de pagamento no futuro sem modificar a classe principal.
+3 - Garantir que o código seja fácil de manter e estender.
